@@ -1,0 +1,69 @@
+<configuration>
+
+    <!-- Console appender for development (standard text format) -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Console appender for development (HTML format) - Changed to standard text format -->
+    <appender name="CONSOLE_HTML" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+
+    <!-- File appender for console logs in HTML format -->
+    <appender name="CONSOLE_FILE_HTML" class="ch.qos.logback.core.FileAppender">
+        <file>logs/console-logs.html</file>
+        <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
+            <layout class="ch.qos.logback.classic.html.HTMLLayout">
+                <!-- Customize HTML layout if necessary -->
+            </layout>
+        </encoder>
+    </appender>
+
+    <!-- File appender for user action logs in HTML format -->
+    <appender name="USER_ACTIONS_HTML" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>logs/user-actions.html</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>logs/user-actions-%d{yyyy-MM-dd}.html</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+        <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
+            <layout class="ch.qos.logback.classic.html.HTMLLayout">
+                <!-- Customize HTML layout if necessary -->
+            </layout>
+        </encoder>
+    </appender>
+
+    <!-- File appender for user action logs -->
+    <appender name="USER_ACTIONS" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>logs/user-actions.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>logs/user-actions-%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Root logger configuration -->
+    <root level="INFO">
+        <!-- Reference standard text format console appender -->
+        <appender-ref ref="CONSOLE" />
+        <!-- Reference HTML console appender -->
+        <appender-ref ref="CONSOLE_HTML" />
+        <!-- Optionally reference file appender for console logs -->
+        <appender-ref ref="CONSOLE_FILE_HTML" />
+    </root>
+
+    <!-- Logger for specific package (user actions) -->
+    <logger name="com.example.goodReads" level="INFO" additivity="false">
+        <appender-ref ref="USER_ACTIONS_HTML" />
+    </logger>
+
+</configuration>

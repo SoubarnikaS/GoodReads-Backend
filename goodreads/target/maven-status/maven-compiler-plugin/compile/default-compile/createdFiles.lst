@@ -1,0 +1,16 @@
+com\soubarnika\goodreads\service\UserService.class
+com\soubarnika\goodreads\controller\GoodReadsController.class
+com\soubarnika\goodreads\entity\Review.class
+com\soubarnika\goodreads\service\BookService.class
+com\soubarnika\goodreads\repository\UsersRepository.class
+com\soubarnika\goodreads\entity\Books.class
+com\soubarnika\goodreads\entity\Users.class
+com\soubarnika\goodreads\service\ReviewService.class
+com\soubarnika\goodreads\GoodreadsApplication.class
+com\soubarnika\goodreads\service\impl\ReviewServiceImpl.class
+com\soubarnika\goodreads\service\impl\UserServiceImpl.class
+com\soubarnika\goodreads\dto\UserDTO.class
+com\soubarnika\goodreads\repository\BookRepository.class
+com\soubarnika\goodreads\service\impl\BookServiceImpl.class
+com\soubarnika\goodreads\exception\GoodReadsException.class
+com\soubarnika\goodreads\repository\ReviewRepository.class

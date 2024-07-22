@@ -1,0 +1,16 @@
+E:\Documents\Spring Boot\goodreads\src\main\java\com\soubarnika\goodreads\service\ReviewService.java
+E:\Documents\Spring Boot\goodreads\src\main\java\com\soubarnika\goodreads\service\impl\ReviewServiceImpl.java
+E:\Documents\Spring Boot\goodreads\src\main\java\com\soubarnika\goodreads\GoodreadsApplication.java
+E:\Documents\Spring Boot\goodreads\src\main\java\com\soubarnika\goodreads\exception\GoodReadsException.java
+E:\Documents\Spring Boot\goodreads\src\main\java\com\soubarnika\goodreads\entity\Users.java
+E:\Documents\Spring Boot\goodreads\src\main\java\com\soubarnika\goodreads\repository\BookRepository.java
+E:\Documents\Spring Boot\goodreads\src\main\java\com\soubarnika\goodreads\dto\UserDTO.java
+E:\Documents\Spring Boot\goodreads\src\main\java\com\soubarnika\goodreads\repository\ReviewRepository.java
+E:\Documents\Spring Boot\goodreads\src\main\java\com\soubarnika\goodreads\service\BookService.java
+E:\Documents\Spring Boot\goodreads\src\main\java\com\soubarnika\goodreads\repository\UsersRepository.java
+E:\Documents\Spring Boot\goodreads\src\main\java\com\soubarnika\goodreads\service\impl\UserServiceImpl.java
+E:\Documents\Spring Boot\goodreads\src\main\java\com\soubarnika\goodreads\service\impl\BookServiceImpl.java
+E:\Documents\Spring Boot\goodreads\src\main\java\com\soubarnika\goodreads\controller\GoodReadsController.java
+E:\Documents\Spring Boot\goodreads\src\main\java\com\soubarnika\goodreads\entity\Books.java
+E:\Documents\Spring Boot\goodreads\src\main\java\com\soubarnika\goodreads\entity\Review.java
+E:\Documents\Spring Boot\goodreads\src\main\java\com\soubarnika\goodreads\service\UserService.java
